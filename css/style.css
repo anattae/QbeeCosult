@@ -1215,6 +1215,11 @@ body.mobile-nav-active #mobile-nav-toggle {
   font-size: 13px;
 }
 
+.step {
+    display: block;
+    padding: 0.5rem 0rem;
+}
+
 /*--------------------------------------------------------------
 # Footer
 --------------------------------------------------------------*/
@@ -1259,11 +1264,11 @@ li {
 }
 
 /*--------------------------------------------------------------
-# Full Screen Overlay Section
+# Academic placement Section
 --------------------------------------------------------------*/
-/* body {
-  font-family: 'Lato', sans-serif;
-} */
+body {
+  font-family: "efont", "pfont", "Arial";
+}
 
 .overlay {
   height: 0%;
