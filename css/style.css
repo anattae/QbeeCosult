@@ -1078,6 +1078,20 @@ body.mobile-nav-active #mobile-nav-toggle {
   margin: 0 2px;
 }
 
+/* Partner Section
+--------------------------------*/
+#partner p {
+  font-size: 13px;
+}
+#partner .btn-link {
+  text-decoration: none;
+  color: #F70606;
+}
+#partner .btn-link:hover {
+  text-decoration: none;
+  color: #000000;
+}
+
 /* Contact Section
 --------------------------------*/
 #contact p {
@@ -1266,9 +1280,9 @@ li {
 /*--------------------------------------------------------------
 # Academic placement Section
 --------------------------------------------------------------*/
-body {
+/* body {
   font-family: "efont", "pfont", "Arial";
-}
+} */
 
 .overlay {
   height: 0%;
@@ -1311,3 +1325,24 @@ body {
   right: 35px;
   }
 }
+
+/* TEST */
+
+#uk #ukCont.collapse:not(.show) {
+  display: block;
+  height: 3rem;
+  overflow: hidden;
+}
+
+#uk #ukCont.collapsing {
+  height: 3rem;
+}
+
+#uk a.collapsed:after {
+  content: '+ Show More';
+}
+
+#uk a:not(.collapsed):after {
+  content: '- Show Less';
+}
+
