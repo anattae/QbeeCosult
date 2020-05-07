@@ -1094,8 +1094,14 @@ body.mobile-nav-active #mobile-nav-toggle {
 
 /* Contact Section
 --------------------------------*/
+#contact {
+  background-color: rgb(0,0,0);
+  background-color: rgba(0,0,0, 1);
+  border-top: 3px solid white;
+}
 #contact p {
   font-size: 13px;
+  color: white;
 }
 #contact {
   padding: 30px 0;
@@ -1326,23 +1332,51 @@ li {
   }
 }
 
-/* TEST */
+/*--------------------------------------------------------------
+# Terms and Conditions Section
+--------------------------------------------------------------*/
+/* body {
+  font-family: "efont", "pfont", "Arial";
+} */
 
-#uk #ukCont.collapse:not(.show) {
+.overlay {
+  height: 0%;
+  width: 100%;
+  position: fixed;
+  z-index: 15;
+  top: 0;
+  left: 0;
+  background-color: rgb(0,0,0);
+  background-color: rgba(0,0,0, 1);
+  overflow-x: hidden;
+  transition: 0.5s;
+}
+
+.overlay a {
+  padding: 8px;
+  text-decoration: none;
+  font-size: 22.9px;
+  color: #F70606;
   display: block;
-  height: 3rem;
-  overflow: hidden;
+  transition: 0.3s;
 }
 
-#uk #ukCont.collapsing {
-  height: 3rem;
+.overlay a:hover, .overlay a:focus {
+  color: #f1f1f1;
 }
 
-#uk a.collapsed:after {
-  content: '+ Show More';
+.overlay .closebtn {
+  position: absolute;
+  top: 20px;
+  right: 45px;
+  font-size: 60px;
 }
 
-#uk a:not(.collapsed):after {
-  content: '- Show Less';
+@media screen and (max-height: 450px) {
+  .overlay a {font-size: 20px}
+  .overlay .closebtn {
+  font-size: 40px;
+  top: 15px;
+  right: 35px;
+  }
 }
-
